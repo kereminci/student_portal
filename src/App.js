@@ -6,17 +6,16 @@ import Navbar from './components/navb/Navbar';
 import Main from './components/main/Main';
 import Etk from './components/etkinlikler/Etk';
 import Login from "./components/login/Login";
+import Register from "./components/register/Register";
 
 
 function App() {
   return (
     <div className="App">
      
-      <Navbar></Navbar>
-      <Slider></Slider>   
-      <br/><br/> <br/>
-      <br/> 
-      <Main></Main>
+      
+
+      <Register></Register>
       
     </div>
   );
