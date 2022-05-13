@@ -1,0 +1,11 @@
+.navbar{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    transition-timing-function:  ease-in;
+    transition: 1s;
+}
+.navbar_blue{
+    background: darkslategray;
+}
