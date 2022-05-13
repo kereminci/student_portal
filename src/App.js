@@ -5,7 +5,7 @@ import Navbar from './components/navb/Navbar';
 //import Button from "react-bootstrap/Button";
 import Main from './components/main/Main';
 import Etk from './components/etkinlikler/Etk';
-import Login3 from "./components/login/Login3";
+import Login from "./components/login/Login";
 
 
 function App() {
