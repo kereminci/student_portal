@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/student_portal/static/css/main.2ffab6e3.css",
+    "main.js": "/student_portal/static/js/main.5009b9b5.js",
+    "static/media/etkinlik3.jpg": "/student_portal/static/media/etkinlik3.87ebdf4e56b90bcf8305.jpg",
+    "static/media/etkinlik1.jpg": "/student_portal/static/media/etkinlik1.4a4881a54b94815be4b7.jpg",
+    "static/media/etkinlik2.png": "/student_portal/static/media/etkinlik2.113d917d9a68d877b700.png",
+    "index.html": "/student_portal/index.html",
+    "main.2ffab6e3.css.map": "/student_portal/static/css/main.2ffab6e3.css.map",
+    "main.5009b9b5.js.map": "/student_portal/static/js/main.5009b9b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ffab6e3.css",
+    "static/js/main.5009b9b5.js"
+  ]
+}
