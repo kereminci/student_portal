@@ -3,6 +3,7 @@
     height: 90vh;
     position: relative;
     overflow: hidden;
+    top: 60px;
   }
   
   .slide {
@@ -37,12 +38,14 @@
     position: absolute;
     top: 23rem;
     left: 5rem;
-    opacity: 0;
+    opacity: 0.1;
     width: 50%;
     color: #fff;
     padding: 3rem;
-    background: rgba(0, 0, 0, 0.3);
-    animation: slide-up 1s ease 0.5s;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid black;
+    border-radius: 25px;
+    animation: slide-up 1s ease 0.7s;
     // animation-delay: 1s;
     animation-fill-mode: forwards;
     visibility: hidden;
