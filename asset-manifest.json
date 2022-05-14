@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/student_portal/static/css/main.5d9cf945.css",
-    "main.js": "/student_portal/static/js/main.5a19ab5c.js",
+    "main.css": "/student_portal/static/css/main.aa44141e.css",
+    "main.js": "/student_portal/static/js/main.aa1f7eba.js",
+    "static/media/logo.png": "/student_portal/static/media/logo.428f572dc4be603ba6db.png",
     "static/media/etkinlik3.jpg": "/student_portal/static/media/etkinlik3.87ebdf4e56b90bcf8305.jpg",
     "static/media/etkinlik1.jpg": "/student_portal/static/media/etkinlik1.4a4881a54b94815be4b7.jpg",
     "static/media/etkinlik2.png": "/student_portal/static/media/etkinlik2.113d917d9a68d877b700.png",
     "index.html": "/student_portal/index.html",
-    "main.5d9cf945.css.map": "/student_portal/static/css/main.5d9cf945.css.map",
-    "main.5a19ab5c.js.map": "/student_portal/static/js/main.5a19ab5c.js.map"
+    "main.aa44141e.css.map": "/student_portal/static/css/main.aa44141e.css.map",
+    "main.aa1f7eba.js.map": "/student_portal/static/js/main.aa1f7eba.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d9cf945.css",
-    "static/js/main.5a19ab5c.js"
+    "static/css/main.aa44141e.css",
+    "static/js/main.aa1f7eba.js"
   ]
 }
