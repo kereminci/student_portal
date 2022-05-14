@@ -2,6 +2,7 @@ import React from "react";
 
 const Admin = () => {
   return (
+    <>
     <div class="sidebar pe-4 pb-3">
       <nav class="navbar bg-secondary navbar-dark">
         <a href="index.html" class="navbar-brand mx-4 mb-3">
@@ -15,7 +16,7 @@ const Admin = () => {
               class="rounded-circle"
               src="img/user.jpg"
               alt=""
-              style="width: 40px; height: 40px;"
+              style={{width: "40px", height: "40px"}}
             />
             <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
           </div>
@@ -86,6 +87,7 @@ const Admin = () => {
         </div>
       </nav>
     </div>
+    </>
   );
 };
 export default Admin;
