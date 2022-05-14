@@ -5,12 +5,13 @@ import Nav2 from './components/nav2/Nav2';
 //import Button from "react-bootstrap/Button";
 import Main from './components/main/Main';
 import Footer from "./components/footer/Footer";
+import Navbar from './components/navb/Navbar';
 
 function App() {
   return (
     <div className="App">
      
-     <Nav2></Nav2>
+     <Navbar></Navbar>
       <Slider></Slider>   
       <br/><br/> <br/>
       <Main></Main>

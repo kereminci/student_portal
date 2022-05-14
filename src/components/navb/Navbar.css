@@ -17,13 +17,29 @@ a {
   text-decoration: none;
   color: rgb(204, 204, 204);
 }
-
+.title{
+  color: rgb(204, 204, 204);
+  font-family: 'Poppins', sans-serif;
+}
+.nav__link{
+  font-family: 'Poppins', sans-serif;
+  
+}
+.nav__link:hover{
+  color: rgb(204, 204, 204);
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 15vh;
   background: rgb(0, 33, 65);
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  
+  gap: 1rem;
 }
 .nav__brand {
   text-transform: uppercase;
@@ -32,12 +48,7 @@ a {
   transition-timing-function:  ease-in;
   transition: 1s;
 }
-.nav__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 3rem;
-}
+
 .nav__toggler {
   display: none;
 }
@@ -46,25 +57,49 @@ a {
   height: 0.2rem;
   margin: 0.4rem;
   background: rgb(204, 204, 204);
-  transition: 0.3s ease-in;
+  
 }
+.dropdown-active{
+  width: 200px;
+  position: absolute;
+  top: 15vh;
+  list-style: none;
+  text-align: start;
+  background: rgb(0, 0, 0);
+}
+.dropdown-menu{
+  display: none;
+}
+.liste:hover{
+  color: rgb(240, 5, 5);
 
+}
 @media screen and (max-width: 768px) {
+  .nav__item{
+    margin: 0px;
+  }
   .nav__toggler {
     display: block;
     cursor: pointer;
   }
   .nav__menu {
-    position: fixed;
-    top: 7vh;
+    position: absolute;
+    top: 15vh;
     right: 0;
-    height: 93vh;
-    width: 50vw;
+    height: fit-content;
+    width: 100%;
     background: rgb(0, 33, 65);
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    z-index: 1;
+    border-top: 0.5vh solid rgb(10, 2, 92);
   }
+  .nav__item{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  
 }
 /* Active Class */
 .nav__active {
