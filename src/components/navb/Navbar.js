@@ -86,13 +86,13 @@ function Navbar() {
             </li>
             <li className="nav__item" onClick={dropdownToggle}>
               <div className="dropdownwrapper">
-                Bilgi İşlem
+                Bölümlerimiz
                 <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' size='sm' ></box-icon>
               </div>
               <ul className={dropdown}>
-                <li onClick={dropdownToggle}><Link to="/bolum">Bilgisayar Mühendisliği</Link></li>
-                <li onClick={dropdownToggle}><Link to="/bolum">Endüstri Mühendisliği</Link></li>
-                <li onClick={dropdownToggle}><Link to="/bolum">Elektrik Elektronik Mühendisliği</Link></li>
+              <Link to="/bolum"><li onClick={dropdownToggle}>Bilgisayar Mühendisliği</li></Link>
+              <Link to="/bolum"><li onClick={dropdownToggle}>Endüstri Mühendisliği</li></Link>
+              <Link to="/bolum"> <li onClick={dropdownToggle}>Elektrik Elektronik Mühendisliği</li></Link>
               </ul>
             </li>
             <li className="nav__item">

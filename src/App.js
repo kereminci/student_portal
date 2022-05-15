@@ -44,8 +44,7 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
-            
-            <Route path='/' element={<Bilgiislem />}>
+            <Route path='/' element={<Bolum />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
               <Route path='bolum' element={<Bolum />} />
               <Route path='bolum' element={<Bolum />} />
