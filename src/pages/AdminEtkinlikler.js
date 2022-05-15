@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminDuyurular.css";
+import "../components/admin/AdminDuyurular.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";

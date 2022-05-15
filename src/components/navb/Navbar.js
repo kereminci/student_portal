@@ -116,7 +116,7 @@ function Navbar() {
               <div className="dropdownwrapper">
                 <Link to="/login">
                   <div className="text">
-                    Giriş Yap
+                    Yönetici Girişi
                   </div>
                 </Link>
               </div>
