@@ -129,17 +129,17 @@ const AdminDuyurular = () => {
           </label>
         </div>
       </form>
-      <div className=" toggle admin-admin-container-fluid pt-4 px-4">
+      <div className=" toggle admin-container-fluid pt-4 px-4">
         <div>
           <h2 className="padding-top-2 justify-to-left">
             <b>Tüm Duyurular</b>
           </h2>
           <table className="row ">
             <tr>
-              <th className="column-4 admin-admin-container text-white">Duyuru No</th>
-              <th className="column-4 admin-admin-container text-white">Duyuru Başlık</th>
-              <th className="column-4 admin-admin-container text-white">Duyuru Açıklama</th>
-              <th className="column-4 admin-admin-container text-white">Duyuru Linki</th>
+              <th className="column-4 admin-container text-white">Duyuru No</th>
+              <th className="column-4 admin-container text-white">Duyuru Başlık</th>
+              <th className="column-4 admin-container text-white">Duyuru Açıklama</th>
+              <th className="column-4 admin-container text-white">Duyuru Linki</th>
             </tr>
             <tr className="padding-top-1">
               <td className="padding-top-1 column-4 cell-color text-white">
