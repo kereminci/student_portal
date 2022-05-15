@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/student_portal/static/css/main.f75befbc.css",
-    "main.js": "/student_portal/static/js/main.afb45cba.js",
+    "main.js": "/student_portal/static/js/main.212d89ee.js",
     "static/media/logo.png": "/student_portal/static/media/logo.428f572dc4be603ba6db.png",
     "index.html": "/student_portal/index.html",
     "main.f75befbc.css.map": "/student_portal/static/css/main.f75befbc.css.map",
-    "main.afb45cba.js.map": "/student_portal/static/js/main.afb45cba.js.map"
+    "main.212d89ee.js.map": "/student_portal/static/js/main.212d89ee.js.map"
   },
   "entrypoints": [
     "static/css/main.f75befbc.css",
-    "static/js/main.afb45cba.js"
+    "static/js/main.212d89ee.js"
   ]
 }
