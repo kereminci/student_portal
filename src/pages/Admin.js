@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import './Admin.css';
+import { SidebarData } from '../components/admin/SidebarData';
+import '../components/admin/Admin.css';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function Admin() {
     
   return (
     <>
-
+        <br /><br /><br />
         <div className='admin-nav'>
           <Link to='#' className='admin-menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
@@ -41,10 +41,10 @@ function Admin() {
           </ul>
         </nav>
         </div>
-        <div className=' toggle container-fluid pt-4 px-4'>
+        <div className=' toggle admin-container-fluid pt-4 px-4'>
                 <div className='row g-4'>
                   <div className='column'>
-                        <div className='container rounded '>
+                        <div className='admin-container rounded '>
                             <i className='fa fa-chart-line fa-3x text-white'></i>
                             <div>
                                 <p className=' text-white'>Toplam Duyurular</p>
@@ -54,7 +54,7 @@ function Admin() {
 
                   </div>
                   <div className='column'>
-                        <div className='container rounded '>
+                        <div className='admin-container rounded '>
                             <i className='fa fa-chart-bar fa-3x text-white'></i>
                             <div class="ms-3">
                                 <p className=' text-white'>Toplam Etkinlikler</p>
@@ -63,7 +63,7 @@ function Admin() {
                         </div>
                   </div>
                   <div className='column'>
-                        <div class="container rounded ">
+                        <div class="admin-container rounded ">
                             <i class="fa fa-chart-area fa-3x text-white"></i>
                             <div class="ms-3">
                                 <p className=' text-white'>Toplam Haberler</p>
@@ -76,9 +76,9 @@ function Admin() {
                   <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Duyuru</b></h1>
                   <table className='row '>
                       <tr>
-                        <th className='row-border column container text-white'>Duyuru Başlık</th>
-                        <th className='row-border column container text-white'>Duyuru Açıklama</th>
-                        <th className='row-border column container text-white'>Duyuru Linki</th>
+                        <th className='row-border column admin-container text-white'>Duyuru Başlık</th>
+                        <th className='row-border column admin-container text-white'>Duyuru Açıklama</th>
+                        <th className='row-border column admin-container text-white'>Duyuru Linki</th>
                       </tr>
                       <tr className=' padding-top-1'>
                         <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>
@@ -109,9 +109,9 @@ function Admin() {
                   <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Etkinlik</b></h1>
                   <table className='row '>
                       <tr>
-                        <th className='row-border column container text-white'>Etkinlik Başlık</th>
-                        <th className='row-border column container text-white'>Etkinlik Açıklama</th>
-                        <th className='row-border column container text-white'>Etkinlik Linki</th>
+                        <th className='row-border column admin-container text-white'>Etkinlik Başlık</th>
+                        <th className='row-border column admin-container text-white'>Etkinlik Açıklama</th>
+                        <th className='row-border column admin-container text-white'>Etkinlik Linki</th>
                       </tr>
                       <tr className='padding-top-1'>
                         <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>
@@ -137,9 +137,9 @@ function Admin() {
                   <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Haber</b></h1>
                   <table className='row '>
                       <tr>
-                        <th className='row-border column container text-white'>Haber Başlık</th>
-                        <th className='row-border column container text-white'>Haber Açıklama</th>
-                        <th className='row-border column container text-white'>Haber Linki</th>
+                        <th className='row-border column admin-container text-white'>Haber Başlık</th>
+                        <th className='row-border column admin-container text-white'>Haber Açıklama</th>
+                        <th className='row-border column admin-container text-white'>Haber Linki</th>
                       </tr>
                       <tr className='padding-top-1'>
                         <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>

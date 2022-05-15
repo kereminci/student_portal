@@ -11,13 +11,13 @@ import Anasayfa from "./pages/Anasayfa";
 import SharedLayout from "./pages/SharedLayout";
 import Ogrenci from "./pages/Ogrenci";
 import Error from "./pages/Error";
-import Login from "./components/login/Login";
+import Login from "./pages/Login";
 import Register from "./components/register/Register"
 import Etkinlikler from "./pages/Etkinlikler";
 import Bolum from "./pages/Bolum";
 import Haber from "./pages/Haber";
 import Duyurular from "./pages/Duyurular";
-
+import Admin from "./pages/Admin";
 import {
   BrowserRouter,
   Routes,
@@ -38,7 +38,7 @@ function App() {
             <Route path='hakkimizda' element={<Hakkimizda />} />
             <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
-            
+            <Route path='admin' element={<Admin />} />
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
