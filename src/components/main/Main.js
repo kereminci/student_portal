@@ -1,7 +1,7 @@
 import React from 'react'
 import './list-groups.css';
 import './blog.css';
-import '../etkinlikler/etk.css';
+import '../etkinlik/etk.css';
 
 const Main = () => {
     return (
