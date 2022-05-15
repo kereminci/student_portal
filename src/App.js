@@ -39,7 +39,7 @@ function App() {
             <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
             <Route path='akademik' element={<Akademik />} />
-            <Route path='etkinlikler' element={<Etkinlikler />} />
+            <Route path='etkinlikler' element={<Etkinlikler />} />    
             <Route path='bilgiislem' element={<Bilgiislem />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
               <Route path='/bilgiislem/a1' element={<A1 />} />
