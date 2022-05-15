@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Bolum() {
+function Haber() {
   return (
     <div>
      
@@ -22,4 +22,4 @@ function Bolum() {
   );
 }
 
-export default Bolum;
+export default Haber;
