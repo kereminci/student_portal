@@ -1,93 +1,176 @@
-import React from "react";
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { SidebarData } from './SidebarData';
+import './Admin.css';
+import { IconContext } from 'react-icons';
+import { Link } from 'react-router-dom';
 
-const Admin = () => {
+function Admin() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+  
+    
   return (
     <>
-    <div class="sidebar pe-4 pb-3">
-      <nav class="navbar bg-secondary navbar-dark">
-        <a href="index.html" class="navbar-brand mx-4 mb-3">
-          <h3 class="text-primary">
-            <i class="fa fa-user-edit me-2"></i>DarkPan
-          </h3>
-        </a>
-        <div class="d-flex align-items-center ms-4 mb-4">
-          <div class="position-relative">
-            <img
-              class="rounded-circle"
-              src="img/user.jpg"
-              alt=""
-              style={{width: "40px", height: "40px"}}
-            />
-            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-          </div>
-          <div class="ms-3">
-            <h6 class="mb-0">Jhon Doe</h6>
-            <span>Admin</span>
-          </div>
+
+        <div className='admin-nav'>
+          <Link to='#' className='admin-menu-bars'>
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
+          <h3 className="title">İSTANBUL UNIVERSITESI - CERRAHPAŞA</h3>
         </div>
-        <div class="navbar-nav w-100">
-          <a href="index.html" class="nav-item nav-link active">
-            <i class="fa fa-tachometer-alt me-2"></i>Dashboard
-          </a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              <i class="fa fa-laptop me-2"></i>Elements
-            </a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="button.html" class="dropdown-item">
-                Buttons
+        <div>
+        <nav className={sidebar ? 'admin-nav-menu active' : 'admin-nav-menu'}>
+          <ul className='admin-nav-menu-items' onClick={showSidebar}>
+            <li className='admin-navbar-toggle'>
+              <a href='#' className='admin-menu-bars'>
+                <AiIcons.AiOutlineClose />
               </a>
-              <a href="typography.html" class="dropdown-item">
-                Typography
-              </a>
-              <a href="element.html" class="dropdown-item">
-                Other Elements
-              </a>
-            </div>
-          </div>
-          <a href="widget.html" class="nav-item nav-link">
-            <i class="fa fa-th me-2"></i>Widgets
-          </a>
-          <a href="form.html" class="nav-item nav-link">
-            <i class="fa fa-keyboard me-2"></i>Forms
-          </a>
-          <a href="table.html" class="nav-item nav-link">
-            <i class="fa fa-table me-2"></i>Tables
-          </a>
-          <a href="chart.html" class="nav-item nav-link">
-            <i class="fa fa-chart-bar me-2"></i>Charts
-          </a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-            >
-              <i class="far fa-file-alt me-2"></i>Pages
-            </a>
-            <div class="dropdown-menu bg-transparent border-0">
-              <a href="signin.html" class="dropdown-item">
-                Sign In
-              </a>
-              <a href="signup.html" class="dropdown-item">
-                Sign Up
-              </a>
-              <a href="404.html" class="dropdown-item">
-                404 Error
-              </a>
-              <a href="blank.html" class="dropdown-item">
-                Blank Page
-              </a>
-            </div>
-          </div>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <a href="{item.path}" className={item.icon}>
+                    <span>{item.title}</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
         </div>
-      </nav>
-    </div>
+        <div className=' toggle container-fluid pt-4 px-4'>
+                <div className='row g-4'>
+                  <div className='column'>
+                        <div className='container rounded '>
+                            <i className='fa fa-chart-line fa-3x text-white'></i>
+                            <div>
+                                <p className=' text-white'>Toplam Duyurular</p>
+                                <h2 className=' text-white'>12</h2>
+                            </div>
+                        </div>
+
+                  </div>
+                  <div className='column'>
+                        <div className='container rounded '>
+                            <i className='fa fa-chart-bar fa-3x text-white'></i>
+                            <div class="ms-3">
+                                <p className=' text-white'>Toplam Etkinlikler</p>
+                                <h2 className=' text-white'>4</h2>
+                            </div>
+                        </div>
+                  </div>
+                  <div className='column'>
+                        <div class="container rounded ">
+                            <i class="fa fa-chart-area fa-3x text-white"></i>
+                            <div class="ms-3">
+                                <p className=' text-white'>Toplam Haberler</p>
+                                <h2 className=' text-white'>7</h2>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <div>
+                  <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Duyuru</b></h1>
+                  <table className='row '>
+                      <tr>
+                        <th className='row-border column container text-white'>Duyuru Başlık</th>
+                        <th className='row-border column container text-white'>Duyuru Açıklama</th>
+                        <th className='row-border column container text-white'>Duyuru Linki</th>
+                      </tr>
+                      <tr className=' padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem ipsum dolor sit amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Lorem </td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum amet sit dolor...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>LoremIpsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum Lorem Lorem Sit dolor amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Dolor!</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Consectetur adipiscing elit...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Amet Sit</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Morbi vulputate tempor mi</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                  </table>
+                  <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Etkinlik</b></h1>
+                  <table className='row '>
+                      <tr>
+                        <th className='row-border column container text-white'>Etkinlik Başlık</th>
+                        <th className='row-border column container text-white'>Etkinlik Açıklama</th>
+                        <th className='row-border column container text-white'>Etkinlik Linki</th>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem ipsum dolor sit amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Lorem </td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum amet sit dolor...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>LoremIpsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum Lorem Lorem Sit dolor amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Dolor!</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Consectetur adipiscing elit...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                  </table>
+                  <h1 className='padding-top-2 justify-to-left'><b>İlk 5 Haber</b></h1>
+                  <table className='row '>
+                      <tr>
+                        <th className='row-border column container text-white'>Haber Başlık</th>
+                        <th className='row-border column container text-white'>Haber Açıklama</th>
+                        <th className='row-border column container text-white'>Haber Linki</th>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem ipsum dolor sit amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Lorem </td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum amet sit dolor...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>LoremIpsum</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Lorem Ipsum Lorem Lorem Sit dolor amet...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Ipsum Dolor!</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Consectetur adipiscing elit...</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                      <tr className='padding-top-1'>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Amet Sit</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'>Morbi vulputate tempor mi</td>
+                        <td className='row-border padding-top-1 column cell-color text-white'><a href="#"><i className='fa fa-external-link-alt text-white'></i></a></td>
+                      </tr>
+                  </table>
+                </div>
+        </div>
     </>
   );
-};
+}
+
 export default Admin;
