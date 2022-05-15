@@ -6,25 +6,36 @@ import "../../Images/logo.png"
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
   const [show, setShow] = useState(true)
   const controlNav = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 120) {
       setShow(false)
+      /*setLogo("rmvlogo")*/
     } else {
       setShow(true)
+      /*setLogo("logoimg")*/
     }
   }
-  useEffect(() => {
-    window.addEventListener("scroll", controlNav)
-    return () => {
-      window.removeEventListener("scroll", controlNav)
-    }
-  }, [])
+  window.addEventListener("scroll", controlNav)
+
+  /*const [logo, setLogo] = useState("logoimg")*/
+
+
+  const [dropdown2, setDropdown2] = useState("dropdown-menu")
+  const dropdownToggle2 = () => {
+    if (dropdown2 === "dropdown-menu") {
+      setDropdown2("dropdown-active");
+      setDropdown("dropdown-menu");
+    } else setDropdown2("dropdown-menu");
+  }
+
 
   const [dropdown, setDropdown] = useState("dropdown-menu")
   const dropdownToggle = () => {
     if (dropdown === "dropdown-menu") {
       setDropdown("dropdown-active");
+      setDropdown2("dropdown-menu");
     } else setDropdown("dropdown-menu");
   }
 
@@ -39,45 +50,64 @@ function Navbar() {
     if (icon === "nav__toggler") {
       setIcon("nav__toggler toggle");
     } else setIcon("nav__toggler");
+    /*show ? 'nav' : 'scroll-nav'*/
   };
   return (
     <div>
-      <nav className={`nav  ${show && "nav_hide"}`}>
-      <Link to="/"><h3 className="title">İSTANBUL UNIVERSITESI - CERRAHPAŞA</h3></Link>
-        <Link to="/">
-          <img width="70" height="%70" src="https://upload.wikimedia.org/wikipedia/tr/thumb/6/6a/Istanbul_%C3%BCniversitesi-cerrahpa%C5%9Fa_logosu.png/241px-Istanbul_%C3%BCniversitesi-cerrahpa%C5%9Fa_logosu.png" alt="iucLogo" />
-        </Link>
-        <ul className={active}>
-          <li className="nav__item">
-            <Link to="/hakkimizda">Hakkımızda</Link>
-          </li>
-          <li className="nav__item">
-          <Link to="/akademik">Akademik</Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/ogrenci">Ogrenci</Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/bilgiislem" onClick={dropdownToggle}>
-              Bilgi İşlem
+      <nav className="nav">
+        <div className="titlelogowrapper">
+          <Link to="/">
+            <img className="logoimg" width="70" height="%70" src="https://upload.wikimedia.org/wikipedia/tr/thumb/6/6a/Istanbul_%C3%BCniversitesi-cerrahpa%C5%9Fa_logosu.png/241px-Istanbul_%C3%BCniversitesi-cerrahpa%C5%9Fa_logosu.png" alt="iucLogo" />
+          </Link>
+          <Link to="/"><h3 className="title">İSTANBUL UNIVERSITESI - CERRAHPAŞA</h3></Link>
+        </div>
+        <div className="listloginwrapper">
+          <ul className={active}>
+            <li className="nav__item">
+              <Link to="/hakkimizda">Hakkımızda</Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/akademik">Akademik</Link>
+            </li>
+            <li className="nav__item" onClick={dropdownToggle2}>
+              <div className="dropdownwrapper">
+                Ogrenci
+                <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' ></box-icon>
+              </div>
+              <ul className={dropdown2}>
+                <li onClick={dropdownToggle2}><a href="#" >B1</a></li>
+                <li onClick={dropdownToggle2}><a href="#" >B2</a></li>
+                <li onClick={dropdownToggle2}><a href="#" >B2</a></li>
+              </ul>
+            </li>
+            <li className="nav__item" onClick={dropdownToggle}>
+              <div className="dropdownwrapper">
+                  Bilgi İşlem
+                <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' size='sm' ></box-icon>
+              </div>
               <ul className={dropdown}>
                 <li onClick={dropdownToggle}><Link to="/bilgiislem/a1">A1</Link></li>
                 <li onClick={dropdownToggle}><Link to="/bilgiislem/a2">A1</Link></li>
                 <li onClick={dropdownToggle}><Link to="/bilgiislem/a3">A1</Link></li>
               </ul>
+            </li>
+            <li className="nav__item">
+              <Link to="/arastirma">
+                Araştırma
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link to="/yerleskeler">
+                Yerleşkeler
+              </Link>
+            </li>
+          </ul>
+          <div className="login">
+            <Link className="s" to="/">
+              <box-icon name='log-in' color='#f3f0ef' ></box-icon>
             </Link>
-          </li>
-          <li className="nav__item">
-          <Link to="/arastirma">
-              Araştırma
-              </Link>
-          </li>
-          <li className="nav__item">
-          <Link to="/yerleskeler">
-              Yerleşkeler
-              </Link>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div onClick={navToggle} className={icon}>
           <div className="line1"></div>
           <div className="line2"></div>
