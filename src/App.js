@@ -15,6 +15,7 @@ import Login from "./pages/Login";
 import Register from "./components/register/Register"
 import Etkinlikler from "./pages/Etkinlikler";
 import Bolum from "./pages/Bolum";
+import Haberler from "./pages/Haberler";
 import Haber from "./pages/Haber";
 import Duyurular from "./pages/Duyurular";
 import Admin from "./pages/Admin";
@@ -50,6 +51,7 @@ function App() {
             <Route path='etkinlikler' element={<Etkinlikler />} />
             <Route path='duyurular' element={<Duyurular />} />
             <Route path='haber' element={<Haber />} />
+            <Route path='haberler' element={<Haberler />} />
             <Route path='/' element={<Bolum />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
               <Route path='bolum' element={<Bolum />} />
