@@ -23,17 +23,19 @@ import {
   Route
 } from "react-router-dom";
 
+
 function App() {
   return (
     <div className="App">
-      {/* EKLENMEK ISTENEN SAYFALAR BURADAN ROUTE OLARAK ROUTESIN ICINDE ASAGIDAKI SYNTAXLA BELIRTILMELI 
+         {/* EKLENMEK ISTENEN SAYFALAR BURADAN ROUTE OLARAK ROUTESIN ICINDE ASAGIDAKI SYNTAXLA BELIRTILMELI 
       SAYFALAR EKLENIRKEN NAVBAR VE FOOTER EKLENMEDEN EKLENMELI. 
       SHAREDLAYOUT.JS DOSYASI NAVBAR VE FOOTERI OTOMATIK OLARAK TUM DOSYALARA EKLIYOR */}
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<SharedLayout />}>
+          <Route  path='/' exact element={<SharedLayout />}>
             <Route index element={<Anasayfa />} />
             <Route path='hakkimizda' element={<Hakkimizda />} />
+            <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
             <Route path='akademik' element={<Akademik />} />
             <Route path='bilgiislem' element={<Bilgiislem />}>
@@ -44,7 +46,7 @@ function App() {
             </Route>
             <Route path='arastirma' element={<Arastirma />} />
             <Route path='yerleskeler' element={<Yerleskeler />} />
-            <Route path='*' element={<Error />} />
+            <Route path='*' element={<Error />} /> 
           </Route>
         </Routes>
       </BrowserRouter>
