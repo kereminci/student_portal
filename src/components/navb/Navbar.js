@@ -81,26 +81,16 @@ function Navbar() {
                 </Link>
               </div>
             </li>
-            <li className="nav__item" onClick={dropdownToggle2}>
-              <div className="dropdownwrapper">
-                Ogrenci
-                <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' ></box-icon>
-              </div>
-              <ul className={dropdown2}>
-                <li onClick={dropdownToggle2}><a href="#" ><div className="dropdown-item">Ogrenci1</div></a></li>
-                <li onClick={dropdownToggle2}><a href="#" ><div className="dropdown-item">Ogrenci2</div></a></li>
-                <li onClick={dropdownToggle2}><a href="#" ><div className="dropdown-item">Ogrenci3</div></a></li>
-              </ul>
-            </li>
+            
             <li className="nav__item" onClick={dropdownToggle}>
               <div className="dropdownwrapper">
                 Bölümlerimiz
                 <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' size='sm' ></box-icon>
               </div>
               <ul className={dropdown}>
-              <Link to="/bolum"><li onClick={dropdownToggle}><div className="dropdown-item">Bilgisayar Mühendisliği</div></li></Link>
-              <Link to="/bolum"><li onClick={dropdownToggle}><div className="dropdown-item">Endüstri Mühendisliği</div></li></Link>
-              <Link to="/bolum"> <li onClick={dropdownToggle}><div className="dropdown-item">Elektrik Elektronik Mühendisliği</div></li></Link>
+              <Link to="/bolum"><li onClick={dropdownToggle}>Bilgisayar Mühendisliği</li></Link>
+              <Link to="/bolum"><li onClick={dropdownToggle}>Endüstri Mühendisliği</li></Link>
+              <Link to="/bolum"> <li onClick={dropdownToggle}>Elektrik Elektronik Mühendisliği</li></Link>
               </ul>
             </li>
             <li className="nav__item">
