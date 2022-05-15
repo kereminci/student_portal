@@ -101,9 +101,14 @@ function Navbar() {
                 Yerleşkeler
               </Link>
             </li>
+            <li className="nav__item">
+              <Link to="/register">
+                Register
+              </Link>
+            </li>
           </ul>
           <div className="login">
-            <Link className="s" to="/">
+            <Link className="s" to="/login">
               <box-icon name='log-in' color='#f3f0ef' ></box-icon>
             </Link>
           </div>

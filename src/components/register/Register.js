@@ -48,7 +48,7 @@ function Register(){
             <button type="button" class="btn btn-primary btn-lg"
               style={{myStyle}}>Register</button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Do you have an account? <a href="#!"
-                class="link-danger">Register</a></p>
+                class="link-danger">Login</a></p>
           </div>
 
         </form>

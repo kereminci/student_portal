@@ -16,6 +16,8 @@ import Yerleskeler from "./pages/Yerleskeler";
 import Arastirma from "./pages/Arastirma";
 import A1 from "./pages/A1";
 import Bilgiislem from "./pages/Bilgiislem";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register"
 
 import {
   BrowserRouter,
@@ -38,6 +40,9 @@ function App() {
             <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
             <Route path='akademik' element={<Akademik />} />
+            <Route path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
+
             <Route path='bilgiislem' element={<Bilgiislem />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
               <Route path='/bilgiislem/a1' element={<A1 />} />
