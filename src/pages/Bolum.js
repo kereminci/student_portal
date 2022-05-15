@@ -2,21 +2,18 @@ import React from 'react'
 
 import Sorular from '../components/sorular/Sorular';
 //import Navbar from './components/navbar/Navbar';
-import Slider from '../components/slider/Slider';
-import Navbar from '../components/navb/Navbar';
 //import Button from "react-bootstrap/Button";
-import Etk from '../components/etkinlik/Etk';
+
 import Footer from "../components/footer/Footer";
 
 
 
-function App() {
+function Bolum() {
   return (
-    <div className="App">
+    <div>
      
-    {/* <Navbar></Navbar>
-      <Slider></Slider>   
-  <br/><br/> <br/> <br/>*/}
+  
+  <br/><br/> <br/> <br/>
       
      
       <h1 className="h1font mt-5 fw-bold">İÜC BİLGİSAYAR MÜHENDİSLİĞİ</h1>
@@ -42,17 +39,12 @@ function App() {
         </div>
       
       <br /> <br />
-      
-
-      
-     
-
-
-      <Footer></Footer>
-     
+    
+    <Footer></Footer>
+    <Footer></Footer>
     
     </div>
   );
 }
 
-export default App;
+export default Bolum;

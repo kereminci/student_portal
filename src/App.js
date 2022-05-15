@@ -19,6 +19,7 @@ import Bilgiislem from "./pages/Bilgiislem";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register"
 import Etkinlikler from "./pages/Etkinlikler";
+import Bolum from "./pages/Bolum";
 import {
   BrowserRouter,
   Routes,
@@ -43,11 +44,12 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
-            <Route path='bilgiislem' element={<Bilgiislem />}>
+            
+            <Route path='/' element={<Bilgiislem />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
-              <Route path='/bilgiislem/a1' element={<A1 />} />
-              <Route path='/bilgiislem/a2' element={<A1 />} />
-              <Route path='/bilgiislem/a3' element={<A1 />} />
+              <Route path='bolum' element={<Bolum />} />
+              <Route path='bolum' element={<Bolum />} />
+              <Route path='bolum' element={<Bolum />} />
             </Route>
             <Route path='arastirma' element={<Arastirma />} />
             <Route path='yerleskeler' element={<Yerleskeler />} />
