@@ -50,7 +50,7 @@ function App() {
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
             <Route path='duyurular' element={<Duyurular />} />
-            <Route path='haber' element={<Haber />} />
+            <Route path='haberler/haber' element={<Haber />} />
             <Route path='haberler' element={<Haberler />} />
             <Route path='/' element={<Bolum />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
