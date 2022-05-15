@@ -14,7 +14,7 @@ const Main = () => {
                     <div className="row">
 
                         <div className="col-md-7">
-                            <h1 className="h1font text-center">HABERLER</h1>
+                        <Link to="/haberler"><h1 className="h1font text-center">HABERLER</h1> </Link>
                             <hr className="border-2 border-top border-primary w-100 "></hr>
                             <div class="row g-0 border border-2 border-muted shadow-lg card-border-radius overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                 <div class="col-6 p-4 d-flex flex-column position-static">
@@ -32,10 +32,10 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="col-md-5 " >
-                            <h1 className="h1font text-center">DUYURULAR</h1>
+                            <Link to="/duyurular"><h1 className="h1font text-center">DUYURULAR</h1> </Link>
                             <hr className="border-2 border-top border-primary w-100 "></hr>
                             <div className="list-group overflow-auto border border-2 border-muted shadow-lg card-border-radius">
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                <a  class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div>
@@ -45,7 +45,7 @@ const Main = () => {
                                         <small class="opacity-50 text-nowrap">3d</small>
                                     </div>
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                <a  class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div>
@@ -55,7 +55,7 @@ const Main = () => {
                                         <small class="opacity-50 text-nowrap">3d</small>
                                     </div>
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                <a  class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div>
@@ -65,7 +65,7 @@ const Main = () => {
                                         <small class="opacity-50 text-nowrap">3d</small>
                                     </div>
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                <a  class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div>
@@ -75,7 +75,7 @@ const Main = () => {
                                         <small class="opacity-50 text-nowrap">3d</small>
                                     </div>
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                <a  class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
 
                                     <div class="d-flex gap-2 w-100 justify-content-between">
                                         <div>

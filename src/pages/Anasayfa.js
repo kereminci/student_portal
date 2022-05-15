@@ -15,7 +15,7 @@ const Anasayfa = () => {
       <Slider></Slider>   
       <br/><br/>
       <Main></Main>
-      <h1 className="h1font mt-3">ETKİNLİKLER</h1>
+      <Link to="/etkinlikler"><h1 className="h1font mt-3">ETKİNLİKLER</h1></Link>-
         <div className="album">
           <div className="container">
           <hr className="border-2 border-top border-primary w-100 "></hr>
