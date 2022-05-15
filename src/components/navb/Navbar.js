@@ -98,9 +98,9 @@ function Navbar() {
                 <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' size='sm' ></box-icon>
               </div>
               <ul className={dropdown}>
-              <Link to="/bolum"><li onClick={dropdownToggle}>Bilgisayar Mühendisliği</li></Link>
-              <Link to="/bolum"><li onClick={dropdownToggle}>Endüstri Mühendisliği</li></Link>
-              <Link to="/bolum"> <li onClick={dropdownToggle}>Elektrik Elektronik Mühendisliği</li></Link>
+              <Link to="/bolum"><li onClick={dropdownToggle}><div className="dropdown-item">Bilgisayar Mühendisliği</div></li></Link>
+              <Link to="/bolum"><li onClick={dropdownToggle}><div className="dropdown-item">Endüstri Mühendisliği</div></li></Link>
+              <Link to="/bolum"> <li onClick={dropdownToggle}><div className="dropdown-item">Elektrik Elektronik Mühendisliği</div></li></Link>
               </ul>
             </li>
             <li className="nav__item">

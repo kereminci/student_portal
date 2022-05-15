@@ -137,8 +137,8 @@ a {
   color: rgb(240, 5, 5);
 
 }
-
-@media screen and (max-width: 970px) {
+/*970px*/
+@media screen and (max-width: 1100px) {
   .logoimg {
     display: none;
   }
