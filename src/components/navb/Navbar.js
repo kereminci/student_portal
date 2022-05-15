@@ -74,9 +74,9 @@ function Navbar() {
             </li>
             <li className="nav__item">
               <div className="dropdownwrapper">
-                <Link to="/akademik">
+                <Link to="/etkinlikler">
                   <div className="text">
-                    Akademik
+                    Etkinlikler
                   </div>
                 </Link>
               </div>
@@ -105,18 +105,18 @@ function Navbar() {
             </li>
             <li className="nav__item">
               <div className="dropdownwrapper">
-                <Link to="/arastirma">
+                <Link to="/duyurular">
                   <div className="text">
-                    Araştırma
+                    Duyurular
                   </div>
                 </Link>
               </div>
             </li>
             <li className="nav__item">
               <div className="dropdownwrapper">
-                <Link to="/yerleskeler">
+                <Link to="/login">
                   <div className="text">
-                    Yerleşkeler
+                    Giriş Yap
                   </div>
                 </Link>
               </div>

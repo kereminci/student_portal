@@ -2,6 +2,8 @@ import React from 'react'
 import './list-groups.css';
 import './blog.css';
 import '../etkinlik/etk.css';
+import { Link } from 'react-router-dom';
+
 
 const Main = () => {
     return (
@@ -20,7 +22,9 @@ const Main = () => {
                                     <h3 class="mb-0">Featured post</h3>
                                     <div class="mb-1 text-muted">Nov 12</div>
                                     <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="http://www.google.com" target="_blank" class="stretched-link linkunderline">Continue reading</a>
+                                    <Link to="/haberler">
+                                    <a target="_blank" class="stretched-link linkunderline">Continue reading</a>
+                                    </Link>
                                 </div>
                                 <div class="col-6 d-none d-lg-block" style={{float:'right'}}>
                                 <img src="https://i.hizliresim.com/mn82e7j.jpg" alt="Girl in a jacket" width="100%" height="250"/>

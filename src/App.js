@@ -11,15 +11,11 @@ import Anasayfa from "./pages/Anasayfa";
 import SharedLayout from "./pages/SharedLayout";
 import Ogrenci from "./pages/Ogrenci";
 import Error from "./pages/Error";
-import Akademik from "./pages/Akademik";
-import Yerleskeler from "./pages/Yerleskeler";
-import Arastirma from "./pages/Arastirma";
-import A1 from "./pages/A1";
-import Bilgiislem from "./pages/Bilgiislem";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register"
 import Etkinlikler from "./pages/Etkinlikler";
 import Bolum from "./pages/Bolum";
+import Haberler from "./pages/Haberler"
 import {
   BrowserRouter,
   Routes,
@@ -40,18 +36,17 @@ function App() {
             <Route path='hakkimizda' element={<Hakkimizda />} />
             <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
-            <Route path='akademik' element={<Akademik />} />
+            
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
+            <Route path='haberler' element={<Haberler />} />
             <Route path='/' element={<Bolum />}>
               {/* BU SATIRDA BILGI ISLEMIN ALT DALLARI OLMALI A1 A2 A3 GECICI VERILDI GITMESI GEREKEN SAYFALAR VERILMELI*/}
               <Route path='bolum' element={<Bolum />} />
               <Route path='bolum' element={<Bolum />} />
               <Route path='bolum' element={<Bolum />} />
             </Route>
-            <Route path='arastirma' element={<Arastirma />} />
-            <Route path='yerleskeler' element={<Yerleskeler />} />
             <Route path='*' element={<Error />} /> 
           </Route>
         </Routes>
