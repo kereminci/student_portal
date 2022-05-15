@@ -6,25 +6,25 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
   {
     title: 'Kontrol Paneli',
-    path: '/',
+    path: '/admin',
     icon: 'fa fa-home',
     cName: 'admin-nav-text'
   },
   {
     title: 'Duyuru',
-    path: '/reports',
+    path: '/adminduyurular',
     icon: 'fa fa-scroll',
     cName: 'admin-nav-text'
   },
   {
     title: 'Etkinlik',
-    path: '/Etkinlikler',
+    path: '/adminetkinlikler',
     icon: 'fa fa-calendar',
     cName: 'admin-nav-text'
   },
   {
     title: 'Haber',
-    path: '/products',
+    path: '/adminhaberler',
     icon: 'fa fa-newspaper',
     cName: 'admin-nav-text'
   }

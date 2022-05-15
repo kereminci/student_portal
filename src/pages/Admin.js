@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from '../components/admin/SidebarData';
+import { SidebarData } from '../pages/SidebarData';
 import '../components/admin/Admin.css';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
@@ -32,9 +32,9 @@ function Admin() {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <a href="{item.path}" className={item.icon}>
+                  <Link to={item.path} className={item.icon}>
                     <span>{item.title}</span>
-                  </a>
+                  </Link>
                 </li>
               );
             })}

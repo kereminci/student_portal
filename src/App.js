@@ -18,6 +18,10 @@ import Bolum from "./pages/Bolum";
 import Haber from "./pages/Haber";
 import Duyurular from "./pages/Duyurular";
 import Admin from "./pages/Admin";
+import AdminDuyurular from "./pages/AdminDuyurular";
+import AdminEtkinlikler from "./pages/AdminEtkinlikler";
+import AdminHaberler from "./pages/AdminHaberler";
+
 import {
   BrowserRouter,
   Routes,
@@ -28,17 +32,19 @@ import {
 function App() {
   return (
     <div className="App">
-         {/* EKLENMEK ISTENEN SAYFALAR BURADAN ROUTE OLARAK ROUTESIN ICINDE ASAGIDAKI SYNTAXLA BELIRTILMELI 
+      {/* EKLENMEK ISTENEN SAYFALAR BURADAN ROUTE OLARAK ROUTESIN ICINDE ASAGIDAKI SYNTAXLA BELIRTILMELI 
       SAYFALAR EKLENIRKEN NAVBAR VE FOOTER EKLENMEDEN EKLENMELI. 
       SHAREDLAYOUT.JS DOSYASI NAVBAR VE FOOTERI OTOMATIK OLARAK TUM DOSYALARA EKLIYOR */}
       <BrowserRouter>
         <Routes>
-          <Route  path='/' exact element={<SharedLayout />}>
+          <Route path='/' exact element={<SharedLayout />}>
             <Route index element={<Anasayfa />} />
             <Route path='hakkimizda' element={<Hakkimizda />} />
             <Route path='student_portal' element={<Anasayfa />} />
             <Route path='ogrenci' element={<Ogrenci />} />
-            <Route path='admin' element={<Admin />} />
+            <Route path='admin' element={<Admin />}>
+            </Route>
+
             <Route path='login' element={<Login />} />
             <Route path='register' element={<Register />} />
             <Route path='etkinlikler' element={<Etkinlikler />} />
@@ -50,7 +56,12 @@ function App() {
               <Route path='bolum' element={<Bolum />} />
               <Route path='bolum' element={<Bolum />} />
             </Route>
-            <Route path='*' element={<Error />} /> 
+            <Route path='*' element={<Error />} />
+
+            <Route path='adminduyurular' element={<AdminDuyurular />} />
+              <Route path='adminetkinlikler' element={<AdminEtkinlikler />} />
+              <Route path='adminhaberler' element={<AdminHaberler />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

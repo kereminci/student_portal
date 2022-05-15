@@ -3,6 +3,9 @@ import "../components/admin/AdminDuyurular.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
+import { Link } from "react-router-dom";
+
+
 const AdminDuyurular = () => {
   const [visible, setVisible] = React.useState(false);
   const [avisible, asetVisible] = React.useState(false);
@@ -13,6 +16,7 @@ const AdminDuyurular = () => {
 
   return (
     <>
+    <br /><br /><br />
       <style>{`
 
         .element-visible { display: block }
@@ -36,9 +40,9 @@ const AdminDuyurular = () => {
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  <a href="{item.path}" className={item.icon}>
+                  <Link to={item.path} className={item.icon}>
                     <span>{item.title}</span>
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -125,17 +129,17 @@ const AdminDuyurular = () => {
           </label>
         </div>
       </form>
-      <div className=" toggle container-fluid pt-4 px-4">
+      <div className=" toggle admin-admin-container-fluid pt-4 px-4">
         <div>
           <h2 className="padding-top-2 justify-to-left">
             <b>Tüm Duyurular</b>
           </h2>
           <table className="row ">
             <tr>
-              <th className="column-4 container text-white">Duyuru No</th>
-              <th className="column-4 container text-white">Duyuru Başlık</th>
-              <th className="column-4 container text-white">Duyuru Açıklama</th>
-              <th className="column-4 container text-white">Duyuru Linki</th>
+              <th className="column-4 admin-admin-container text-white">Duyuru No</th>
+              <th className="column-4 admin-admin-container text-white">Duyuru Başlık</th>
+              <th className="column-4 admin-admin-container text-white">Duyuru Açıklama</th>
+              <th className="column-4 admin-admin-container text-white">Duyuru Linki</th>
             </tr>
             <tr className="padding-top-1">
               <td className="padding-top-1 column-4 cell-color text-white">
@@ -331,6 +335,8 @@ const AdminDuyurular = () => {
               </td>
             </tr>
           </table>
+
+          <br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>
     </>
