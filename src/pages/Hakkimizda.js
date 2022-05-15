@@ -13,7 +13,7 @@ function Hakkimizda() {
         <div className="album">
           <div className="container">
           
-          <h1 className="h1font fw-bold mt-5">HAKKIMIZDA</h1>
+          <h1 className="h1font fw-bold mt-5">MİSYONUMUZ VE VİZYONUMUZ</h1>
           <hr className="border-2 border-top border-primary w-100 "></hr>
             <div className="row">
             <p>
@@ -36,7 +36,7 @@ Dünyada ve ülkemizde kabul edilen öncü bir araştırma üniversitesi olmak.
               
               <img src="https://i.hizliresim.com/2o1g4bg.jpg" className='w-25 rounded shadow-lg px-0 mx-5'/> 
             </div>
-            <h1 className="h1font fw-bold mt-5">MİSYONUMUZ VE VİZYONUMUZ</h1>
+            <h1 className="h1font fw-bold mt-5">HAKKIMIZDA</h1>
             <hr className="border-2 border-top border-primary w-100 "></hr>
             <div className='row'>
               
