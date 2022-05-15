@@ -17,6 +17,7 @@ import Arastirma from "./pages/Arastirma";
 import A1 from "./pages/A1";
 import Bilgiislem from "./pages/Bilgiislem";
 import Etkinlikler from "./pages/Etkinlikler";
+
 import {
   BrowserRouter,
   Routes,

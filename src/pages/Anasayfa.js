@@ -4,6 +4,7 @@ import Slider from '../components/slider/Slider';
 import Etk from '../components/etkinlik/Etk';
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
+import { Link } from "react-router-dom";
 
 const Anasayfa = () => {
   return (
@@ -19,9 +20,9 @@ const Anasayfa = () => {
           <div className="container">
           <hr className="border-2 border-top border-primary w-100 "></hr>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div className="col"><Etk></Etk></div>
-            <div className="col"><Etk></Etk></div>
-              <div className="col"><Etk></Etk></div>
+            <Link to="/etkinlikler"><div className="col"><Etk></Etk></div> </Link>
+            <Link to="/etkinlikler"><div className="col"><Etk></Etk></div> </Link>
+            <Link to="/etkinlikler"><div className="col"><Etk></Etk></div> </Link> 
             </div>
           </div>
         </div>
