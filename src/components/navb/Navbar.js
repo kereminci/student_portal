@@ -64,10 +64,14 @@ function Navbar() {
         <div className="listloginwrapper">
           <ul className={active}>
             <li className="nav__item">
-              <Link to="/hakkimizda">Hakkımızda</Link>
+              <div className="dropdownwrapper">
+                <Link to="/hakkimizda">Hakkımızda</Link>
+              </div>
             </li>
             <li className="nav__item">
-              <Link to="/akademik">Akademik</Link>
+              <div className="dropdownwrapper">
+                <Link to="/akademik">Akademik</Link>
+              </div>
             </li>
             <li className="nav__item" onClick={dropdownToggle2}>
               <div className="dropdownwrapper">
@@ -82,7 +86,7 @@ function Navbar() {
             </li>
             <li className="nav__item" onClick={dropdownToggle}>
               <div className="dropdownwrapper">
-                  Bilgi İşlem
+                Bilgi İşlem
                 <box-icon name='down-arrow' flip='horizontal' color='#faf8f7' size='sm' ></box-icon>
               </div>
               <ul className={dropdown}>
@@ -92,14 +96,18 @@ function Navbar() {
               </ul>
             </li>
             <li className="nav__item">
-              <Link to="/arastirma">
-                Araştırma
-              </Link>
+              <div className="dropdownwrapper">
+                <Link to="/arastirma">
+                  Araştırma
+                </Link>
+              </div>
             </li>
             <li className="nav__item">
-              <Link to="/yerleskeler">
-                Yerleşkeler
-              </Link>
+              <div className="dropdownwrapper">
+                <Link to="/yerleskeler">
+                  Yerleşkeler
+                </Link>
+              </div>
             </li>
           </ul>
           <div className="login">
