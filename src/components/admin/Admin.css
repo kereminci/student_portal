@@ -1,7 +1,7 @@
 .admin-nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     height: 15vh;
     background: rgb(0, 33, 65);
 }
@@ -68,6 +68,14 @@
 
 .admin-nav-menu-items {
     width: 100%;
+}
+
+.admin-nav-margin-top{
+    margin-top: 18%;
+}
+
+.admin-nav-margin-left{
+    margin-left: 15%;
 }
 
 .admin-navbar-toggle {

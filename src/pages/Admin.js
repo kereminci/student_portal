@@ -19,11 +19,11 @@ function Admin() {
           <Link to='#' className='admin-menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <h3 className="title">İSTANBUL UNIVERSITESI - CERRAHPAŞA</h3>
+          <h3 className="title admin-nav-margin-left">İSTANBUL UNIVERSITESI - CERRAHPAŞA</h3>
         </div>
         <div>
         <nav className={sidebar ? 'admin-nav-menu active' : 'admin-nav-menu'}>
-          <ul className='admin-nav-menu-items' onClick={showSidebar}>
+          <ul className='admin-nav-menu-items admin-nav-margin-top' onClick={showSidebar}>
             <li className='admin-navbar-toggle'>
               <a href='#' className='admin-menu-bars'>
                 <AiIcons.AiOutlineClose />
